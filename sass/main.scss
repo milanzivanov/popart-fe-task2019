@@ -113,6 +113,17 @@
 
         transition: all 0.3s ease-in-out;
 
+        @include breakpoint (mobile) {
+          overflow-x: auto;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          top: 0;
+          color: $white;
+          right: 0;
+          transform: translate(-100%, 0);
+        }
+
         .sugest-input-box {
           flex: 50%;
           padding: 10px 0;
@@ -158,10 +169,49 @@
           }
         }
 
+        .mobile-view-hide {
+          @include breakpoint (mobile) {
+            display: none;
+          }
+
+          @include breakpoint (desktop) {
+            display: block;
+          }
+
+          
+        }
+
       }
       
       .hero-container_sigestion.active {
         right: 0;
+
+        @include breakpoint (mobile) {
+          // transform: translate(100%, -100%);
+          transform: translate(0%, 0%);
+        }
+      }
+
+      
+      .mobile-view-hide {
+        display: flex;
+        padding: 10px;
+        background: $blue1;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        
+        @include breakpoint (desktop) {
+          display: none;
+        }
+        a {
+          color: $white;
+        }
+
+
       }
 
     }

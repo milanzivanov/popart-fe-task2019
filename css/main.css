@@ -502,6 +502,16 @@ body {
         cursor: pointer;
         flex-flow: row wrap;
         transition: all 0.3s ease-in-out; }
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+          .container-mobes .hero-container .hero-content .hero-container_sigestion {
+            overflow-x: auto;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            color: #fff;
+            right: 0;
+            transform: translate(-100%, 0); } }
         .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-input-box {
           flex: 50%;
           padding: 10px 0; }
@@ -533,8 +543,31 @@ body {
           transform-origin: bottom right; }
           .container-mobes .hero-container .hero-content .hero-container_sigestion .hero-container_sugest a {
             color: #fff; }
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+          .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
+            display: none; } }
+        @media only screen and (min-width: 1024px) {
+          .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
+            display: block; } }
       .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
         right: 0; }
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+          .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
+            transform: translate(0%, 0%); } }
+      .container-mobes .hero-container .hero-content .mobile-view-hide {
+        display: flex;
+        padding: 10px;
+        background: #005ea3;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        @media only screen and (min-width: 1024px) {
+          .container-mobes .hero-container .hero-content .mobile-view-hide {
+            display: none; } }
+        .container-mobes .hero-container .hero-content .mobile-view-hide a {
+          color: #fff; }
 
 .container-standard {
   height: auto;
