@@ -97,13 +97,50 @@
   
       .hero-container_sigestion {
         position: absolute;
+        width: 50%;
         background: #005ea3;
         padding: 20px;
         bottom: 0;
         right: 0;
         color: white;
-        display: none;
+        // display: none;
         cursor: pointer;
+
+        display: flex;
+        cursor: pointer;
+        flex-flow: row wrap;
+
+        .sugest-input-box {
+          flex: 50%;
+          padding: 10px 0;
+
+          p {
+            padding-bottom: 10px;
+          }
+
+          input.input-sugest {
+            width: 95%;
+            padding: 30px;
+            border: none;
+            outline: none;
+          }
+        }
+
+        .sugest-input-box_coments {
+          flex: 100%;
+          textarea {
+            width: 97%;
+            border: none;
+            outline: none;
+          }
+        }
+
+        .sugest-left-btn {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          width: 100%;
+        }
 
         @include breakpoint (mobile) {
 
