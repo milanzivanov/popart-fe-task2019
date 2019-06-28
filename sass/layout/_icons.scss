@@ -1,0 +1,53 @@
+/* ----------------- Icons
+----------------------------------------------------------------------- */
+.icon {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-search {
+  width: 1.5em;
+  height: 1.5em;
+}
+  
+.icon-logo {
+  width: 213px;
+  height: 151px;
+}
+
+.icon-menu {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #fff;  
+}
+
+.icon-footer {
+  fill: #005ea3;
+  width: 2em;
+  height: 2em;
+}
+
+.icon-about {
+  fill: #005ea3;
+  padding: 0 15px 0 0;
+  width: 4em;
+  height: 4em;
+}
+
+.icon-mision-none {
+  opacity: 0;
+}
+
+.icon-slider_arrow {
+    fill: #fff;
+    height: 30px;
+}
+
+.flex-next,
+.flex-prev {
+    outline: none;
+}
