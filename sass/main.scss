@@ -33,7 +33,7 @@
   .hero-container {
     height: calc(100vh - 187px);
     position: relative;
-    background: url(../img/MOBES.png) no-repeat #fff;
+    background: url(../img/MOBES.png) no-repeat $white;
     background-position: left 30px bottom 0;
   
     .hero-content {
@@ -43,6 +43,7 @@
       position: relative;
       height: 100%;
       margin-bottom: 100px;
+      overflow: hidden;
 
       max-width: 1626px;
       margin: 0 30px 0 265px;
@@ -65,7 +66,7 @@
       .bg-right {
         height: 100%;
         flex: 0 0 70%;
-        background: url(../img/hero.jpg) no-repeat #fff;
+        background: url(../img/hero.jpg) no-repeat $white;
         background-size: cover;
 
         @include breakpoint (mobile) {
@@ -98,17 +99,19 @@
       .hero-container_sigestion {
         position: absolute;
         width: 50%;
-        background: #005ea3;
+        background: $blue1;
         padding: 20px;
         bottom: 0;
-        right: 0;
-        color: white;
-        // display: none;
+        right: -804px;
+        color: $white;
+        display: flex;
         cursor: pointer;
 
         display: flex;
         cursor: pointer;
         flex-flow: row wrap;
+
+        transition: all 0.3s ease-in-out;
 
         .sugest-input-box {
           flex: 50%;
@@ -142,28 +145,27 @@
           width: 100%;
         }
 
-        @include breakpoint (mobile) {
-
+        .hero-container_sugest {
+          position: absolute;
+          background: $blue1;
+          top: 33%;
+          left: -173px;
+          transform: translateY(-50%) rotate(-90deg);
+          padding: 20px;
+          transform-origin: bottom right;
+          a {
+            color: $white;
+          }
         }
+
       }
-  
+      
       .hero-container_sigestion.active {
-        display: flex;
+        right: 0;
       }
+
     }
   
-    .hero-container_sugest {
-      position: absolute;
-      background: #005ea3;
-      top: 37%;
-      right: 0;
-      transform: translateY(-50%) rotate(-90deg);
-      padding: 20px;
-      transform-origin: bottom right;
-      a {
-        color: #fff;
-      }
-    }
   }
 
 }
@@ -184,7 +186,7 @@
   .standard-content {
     z-index: 5;
     height: 100%;
-    background: url(../img/Standardi.png) no-repeat #fff;
+    background: url(../img/Standardi.png) no-repeat $white;
     background-position: top 25px left 360px;
 
     display: flex;
@@ -256,7 +258,7 @@
 
       .svg-slider-btn {
         align-self: flex-end;
-        background-color: #005ea3;
+        background-color: $blue1;
         padding: 25px 0;
 
         @include breakpoint (mobile) {
@@ -288,7 +290,7 @@
               h2 {
                 padding: 20px;
                 font-size: 16px;
-                color: #333;
+                color: $text;
                 line-height: 1.5;
               }
             }
@@ -299,7 +301,7 @@
               bottom: 88px;
               left: 0;
               right: 0;
-              background-color: #005ea3;
+              background-color: $blue1;
               opacity: 0.7;
               justify-content: center;
               align-items: center;
@@ -314,7 +316,7 @@
               a {
                 font-size: 18px;
                 font-weight: bold;
-                color: #fff;
+                color: $white;
               }
             }
           }
@@ -350,7 +352,7 @@
 .container-aboutus {
   .aboutus-content {
 
-    background: url(../img/Onama1.png) no-repeat #fff;
+    background: url(../img/Onama1.png) no-repeat $white;
     background-position: bottom left 50px;
 
     display: flex;
@@ -443,7 +445,7 @@
 // mision
 .container-mision {
 
-  background: url(../img/Misija.png) no-repeat #fff;
+  background: url(../img/Misija.png) no-repeat $white;
   background-position: left 50px center;
 
   @include breakpoint (mobile) {
@@ -514,7 +516,7 @@
               text-transform: uppercase;
             }
             h3 {
-              color: #333;
+              color: $text;
               font-size: 30px;
               font-weight: bold;
               padding-bottom: 10px;
@@ -525,8 +527,6 @@
             }
           }
         }
-
-
       }
     }
     
@@ -535,7 +535,7 @@
 
 // act
 .container-act {
-  background: url(../img/Aktuelosti.png) no-repeat #fff;
+  background: url(../img/Aktuelosti.png) no-repeat $white;
   background-position: left -20px top 205px;
 
   @include breakpoint (mobile) {
@@ -598,7 +598,7 @@
 
       .svg-slider-btn {
         align-self: flex-end;
-        background-color: #005ea3;
+        background-color: $blue1;
         padding: 25px 0;
 
         @include breakpoint (mobile) {
@@ -658,9 +658,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #005ea3;
+        background-color: $blue1;
         padding: 25px;
-        color: #fff;
+        color: $white;
         text-align: center;
         z-index: 5;
 
@@ -695,7 +695,7 @@
 
       .act-hover-box {
         position: absolute;
-        background: #005ea3;
+        background: $blue1;
         opacity: 0.7;
         top: 0;
         right: 0;
@@ -776,7 +776,7 @@ section.container-client {
 // tim 
 .container-tim {
 
-  background: url(../img/Tim.png) no-repeat #fff;
+  background: url(../img/Tim.png) no-repeat $white;
   background-position: right 30px bottom;
  
   @include breakpoint (mobile) {
@@ -795,7 +795,7 @@ section.container-client {
 
     .tim-content_left {
       flex: 65%;
-      background-color: #005ea3;
+      background-color: $blue1;
       padding: 100px 0 100px 200px;
       position: relative;
 
@@ -813,7 +813,7 @@ section.container-client {
           li {
             position: relative;     
             overflow: hidden;
-            background-color: #005ea3;
+            background-color: $blue1;
             padding: 0 15px 0 0;
             img {
               margin: 0 auto;
@@ -860,7 +860,7 @@ section.container-client {
         top:0;
         right: 0;
         bottom: 0;
-        background-color: #fff;
+        background-color: $white;
         width: 150px;
         height: 100%;
         z-index: 5;
@@ -876,7 +876,7 @@ section.container-client {
       top: 0;
       right: 50px;
       z-index: 15;
-      background-color: #005ea3;
+      background-color: $blue1;
       width: 150px;
       height: 100px;
       display: flex;
@@ -908,7 +908,7 @@ section.container-client {
 .container-offer {
   .offer-content {
     height: 100%;
-    background: url(../img/globe.png) no-repeat #005ea3;
+    background: url(../img/globe.png) no-repeat $blue1;
     background-position: right 100px center;
 
     display: flex;
@@ -924,7 +924,7 @@ section.container-client {
     }
 
     h2 {
-      color: #fff;
+      color: $white;
       font-size: 30px;
       font-weight: bold;
 
@@ -939,9 +939,9 @@ section.container-client {
       width: 12%;
       text-align: center;
       padding: 20px;
-      color: #fff;
-      background-color: #005ea3;
-      border: 1px solid #fff;
+      color: $white;
+      background-color: $blue1;
+      border: 1px solid $white;
 
       @include breakpoint (mobile) {
         width: 90%;
@@ -1065,7 +1065,7 @@ section.container-contact {
         .justify-text {
           width: 80%;
           line-height: 1.8;
-          color: #333;
+          color: $text;
           font-size: 18px;
         }
   
@@ -1082,7 +1082,6 @@ section.container-contact {
     }
   }
 }
-
 
 // overwrith flexslider
 .flex-control-nav.flex-control-paging,

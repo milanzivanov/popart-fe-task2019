@@ -1,37 +1,20 @@
 console.log("this one");
 
 $(document).ready(function() {
-    'use strict';
-    var menuBotton = $(".js-burger-icon, .js-close-menu");
-    var sugestionBtn = $(".js-sugestion");
-    var sugestionBtnClose = $(".hero-container_sigestion");
-    menuBotton.on("click", function(e) {
-      $(".nav-burger_menu").toggleClass("active");
-    });
-    sugestionBtn.on("click", function(e) {
-        $(".hero-container_sigestion").addClass("active");
-    });
-    sugestionBtnClose.on("click", function(e) {
-        $(".hero-container_sigestion").removeClass("active");
-    });
+  'use strict';
+  var menuBotton = $(".js-burger-icon, .js-close-menu");
+  var sugestionBtn = $(".js-sugestion");
+  var sugestionBtnClose = $(".js-sugestion-close");
+  menuBotton.on("click", function(e) {
+    $(".nav-burger_menu").toggleClass("active");
   });
-
-//   flexbox
-
-  // Can also be used with $(document).ready()
-// $(window).load(function() {
-//     $('.flexslider').flexslider({
-//       animation: "slide",
-//       customDirectionNav: $(".custom-navigation a"),
-//       slideshow: true,
-//       animationLoop: false,
-//       itemWidth: 210,
-//       itemMargin: 5,
-//       minItems: 2,
-//       maxItems: 3
-//     });
-//   });
-
+  sugestionBtn.on("click", function(e) {
+    $(".hero-container_sigestion").addClass("active");
+  });
+  sugestionBtnClose.on("click", function(e) {
+    $(".hero-container_sigestion").removeClass("active");
+  });
+});
 
 // two slider
 $(window).load(function() {
