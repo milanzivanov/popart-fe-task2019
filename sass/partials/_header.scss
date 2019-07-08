@@ -19,6 +19,7 @@
       display: flex;
       align-self: stretch;
       align-items: center;
+      padding: 5px 0 0 36px;
 
       @include breakpoint (mobile) {
         justify-content: center;
@@ -35,28 +36,38 @@
       @include breakpoint (mobile) {
         justify-content: space-between;
         flex: 100%;
+        padding: 5px;
       }
   
       .nav-search {
         display: flex;
         align-items: center;
-        flex: 3;
+        flex: 1;
         justify-content: flex-end;
+        padding: 0 171px 0 0;
 
         @include breakpoint (mobile) {
           flex: 1;
           justify-content: flex-start;
+          padding: 0;
         }
   
         input[type="text"] {
-          width: 9%;
+          width: 8%;
           border: none;
           outline: none;
           padding: 5px;
           font-size: 18px;
+          letter-spacing: 1px;
+
+          @include breakpoint (tablet) {
+            width: 60%;
+            border-bottom: 2px solid #000;
+          }
 
           @include breakpoint (mobile) {
-            width: 35%;
+            width: 50%;
+            border-bottom: 2px solid #000;
           }
         }
   
@@ -67,7 +78,7 @@
   
       .nav-burger {
         display: flex;
-        flex: 1;
+        flex: 0;
         justify-content: flex-end;
         align-items: center;
   
@@ -80,7 +91,7 @@
         }
   
         .nav-burger_icon {
-          padding: 10px 35px 10px 45px;
+          padding: 10px 15px 10px 33px;
           
           a {
             display: inline-block;
@@ -108,7 +119,7 @@
   top: 0;
   bottom: 0;
   background-color: #005ea3;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 10px;
   display: none;
   flex-direction: column;
@@ -122,6 +133,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    margin: 5px 33px 0 0;
     a {
       display: block;
       padding: 10px;
