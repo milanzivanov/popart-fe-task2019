@@ -359,7 +359,7 @@ body {
           padding: 5px;
           font-size: 18px;
           letter-spacing: 1px; }
-          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          @media only screen and (min-width: 768px) and (max-width: 1365px) {
             .header .header-content nav.nav .nav-search input[type="text"] {
               width: 60%;
               border-bottom: 2px solid #000; } }
@@ -410,7 +410,12 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
-    margin: 5px 33px 0 0; }
+    margin: 5px 33px 0 0;
+    cursor: pointer; }
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      .nav-burger_menu .nav-menu_close {
+        padding: 0;
+        margin: 0; } }
     .nav-burger_menu .nav-menu_close a {
       display: block;
       padding: 10px;
@@ -464,7 +469,7 @@ body {
     background: url(../img/MOBES.png) no-repeat #fff;
     background-position: left 30px bottom 0;
     overflow: hidden; }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
       .container-mobes .hero-container {
         background: none; } }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
@@ -477,7 +482,7 @@ body {
       position: relative;
       height: 721px;
       margin-bottom: 100px; }
-      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      @media only screen and (min-width: 768px) and (max-width: 1365px) {
         .container-mobes .hero-container .hero-content {
           max-width: 100%;
           margin: 0 auto;
@@ -492,7 +497,7 @@ body {
       .container-mobes .hero-container .hero-content .bg-left {
         height: 100%;
         flex: 0 0 38%; }
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
           .container-mobes .hero-container .hero-content .bg-left {
             display: none; } }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
@@ -503,7 +508,7 @@ body {
         flex: 0 0 62%;
         background: url(../img/hero.jpg) no-repeat #fff;
         background-size: cover; }
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
           .container-mobes .hero-container .hero-content .bg-right {
             flex: 0 0 100%; } }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
@@ -514,7 +519,7 @@ body {
         display: flex;
         top: 159px;
         left: 0; }
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
           .container-mobes .hero-container .hero-content .hero-text {
             width: 100%;
             margin: auto;
@@ -533,7 +538,7 @@ body {
           flex-direction: column;
           padding: 0;
           z-index: 3; }
-          @media only screen and (min-width: 768px) and (max-width: 1023px) {
+          @media only screen and (min-width: 768px) and (max-width: 1365px) {
             .container-mobes .hero-container .hero-content .hero-text .hero-text_content {
               background: #dce4e1d4;
               padding: 5px; } }
@@ -598,7 +603,7 @@ body {
           position: absolute;
           background: #005ea3;
           top: 23%;
-          left: -240px;
+          left: -259px;
           transform: translateY(-50%) rotate(-90deg);
           padding: 20px 40px;
           transform-origin: bottom right; }
@@ -610,11 +615,17 @@ body {
         @media only screen and (min-width: 120px) and (max-width: 767px) {
           .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
             display: none; } }
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 1366px) {
           .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
             display: block; } }
       .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
-        right: 0; }
+        right: 0;
+        z-index: 50; }
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
+          .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
+            transform: translate(0%, 0%);
+            height: 450px;
+            overflow-y: scroll; } }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
           .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
             transform: translate(0%, 0%); } }
@@ -627,7 +638,7 @@ body {
         position: absolute;
         top: 0;
         right: 0; }
-        @media only screen and (min-width: 1024px) {
+        @media only screen and (min-width: 1366px) {
           .container-mobes .hero-container .hero-content .mobile-view-hide {
             display: none; } }
         .container-mobes .hero-container .hero-content .mobile-view-hide a {

@@ -211,7 +211,7 @@
           position: absolute;
           background: $blue1;
           top: 23%;
-          left: -240px;
+          left: -259px;
           transform: translateY(-50%) rotate(-90deg);
           padding: 20px 40px;
           transform-origin: bottom right;
@@ -239,6 +239,13 @@
       
       .hero-container_sigestion.active {
         right: 0;
+        z-index: 50;
+        
+        @include breakpoint (tablet) {
+          transform: translate(0%, 0%);
+          height: 450px;
+          overflow-y: scroll;
+        }
 
         @include breakpoint (mobile) {
           transform: translate(0%, 0%);
@@ -263,7 +270,6 @@
         a {
           color: $white;
         }
-
 
       }
 
