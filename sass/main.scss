@@ -88,10 +88,12 @@
 
         @include breakpoint (tablet) {
           flex: 0 0 100%;
+          height: 100vh;
         }
 
         @include breakpoint (mobile) {
           flex: 0 0 100%;
+          height: 100vh;
         }
 
       }
@@ -260,7 +262,6 @@
           transform: translate(0%, 0%);
         }
       }
-
       
       .mobile-view-hide {
         display: flex;
@@ -294,8 +295,10 @@
   height: auto;
   position: relative;
 
-  max-width: 1626px;
-  margin: 0 30px 0 265px;
+  @include breakpoint (tablet) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
   @include breakpoint (mobile) {
     max-width: 100%;
@@ -312,9 +315,18 @@
     flex-flow: row wrap;
     justify-content: space-between;
 
-    @include breakpoint (mobile) {
+    padding: 0 0 37px 0;
+
+    @include breakpoint (tablet) {
       justify-content: center;
       flex-direction: column;
+      align-items: center;
+      background: none;
+    }
+
+    @include breakpoint (mobile) {
+      align-items: center;
+      background: none;
     }
 
     .standard-box_btn {
@@ -322,36 +334,49 @@
       padding: 50px 10px 100px 10px;
       background-color: #f8f8f8;
       z-index: 8;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: end;
+
+      @include breakpoint (tablet) {
+        flex: 100%;
+        padding: 0;
+        align-items: center;
+        align-self: center;
+      }
 
       @include breakpoint (mobile) {
         flex: 100%;
         padding: 0;
       }
 
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      align-self: end;
-
       .standard-box_text {
-        padding: 10px;
+        padding: 130px 0 0 68px;
 
-        @include breakpoint (mobile) {
+        @include breakpoint (tablet) {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          padding: 10px;
+        }
+
+        @include breakpoint (mobile) {
+          padding: 10px;
         }
 
         h2 {
           color: #303030;
-          font-weight: 700;
           padding: 0 0 10px 0;
+          font-size: 30px;
+          font-weight: bold;
         }
 
         p {
           line-height: 1.5;
-          padding: 0 0 50px 0;
+          padding: 0 0 47px 0;
+          font-size: 18px;
 
           @include breakpoint (mobile) {
             text-align: center;
@@ -363,12 +388,17 @@
 
     .standard-box_flex {
       flex: 60%;
-      margin: 0 180px 0 0;
+      margin: 0 120px 0 0;
       display: flex;
       flex-direction: column;
-      padding: 200px 0 50px 0;
+      padding: 268px 0 50px 0;
       z-index: 7;
 
+      @include breakpoint (tablet) {
+        flex: 100%;
+        padding: 10px;
+        margin: 0;
+      }
       @include breakpoint (mobile) {
         flex: 100%;
         padding: 0;
@@ -380,6 +410,10 @@
         background-color: $blue1;
         padding: 25px 0;
 
+        @include breakpoint (tablet) {
+          align-self: center;
+          order: 2;
+        }
         @include breakpoint (mobile) {
           align-self: center;
           order: 2;
@@ -407,10 +441,12 @@
             .slides-text_box {
               background-color: #f8f8f8;
               h2 {
-                padding: 20px;
-                font-size: 16px;
-                color: $text;
+                padding: 37px 0 0 50px;
+                font-size: 18px;
+                color: #454545;
                 line-height: 1.5;
+                font-weight: 700;
+                text-transform: uppercase;
               }
             }
 
@@ -448,7 +484,6 @@
       }
     }
   }
-
 }
 
 .container-standard:before {
@@ -461,6 +496,9 @@
   background-color: #f8f8f8;
   z-index: 6;
 
+  @include breakpoint (tablet) {
+    display: none;
+  }
   @include breakpoint (mobile) {
     display: none;
   }
@@ -477,9 +515,8 @@
     display: flex;
     justify-content: space-between;
 
-    max-width: 1626px;
-    margin: 0 30px 0 265px;
     margin-bottom: 150px;
+    padding-left: 30px;
 
     @include breakpoint (mobile) {
       max-width: 100%;
@@ -498,7 +535,7 @@
     }
 
     .about-us-box_right {
-      padding: 0 0 50px 0;
+      padding: 50px 0 50px 0;
 
       @include breakpoint (mobile) {
         padding: 0 0 10px 0;
@@ -516,9 +553,11 @@
       }
 
       h2 {
-        font-size: 20px;
-        font-weight: 700;
-        padding: 0 0 10px 0;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0 0 40px 0;
+        color: #cacaca;
+        text-transform: uppercase;
 
         @include breakpoint (mobile) {
           justify-content: center;
@@ -528,7 +567,10 @@
 
       p {
         line-height: 1.5;
-        padding: 0 0 30px 0;
+        padding: 0 0 40px 0;
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
 
         @include breakpoint (mobile) {
           text-align: center;
@@ -541,6 +583,7 @@
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
+        padding: 0 0 65px 0;
 
         .text-box {
           flex: 50%;
@@ -548,14 +591,27 @@
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          padding:20px 0 20px 50px;
 
           a {
-            font-weight: 700;
+            font-weight: bold;
             color: #303030;
+            font-size: 25px;
+            padding: 0 0 0 18px;
           }
 
+          &:nth-child(odd) {
+            padding: 15px 0 0 55px;
+          }
         }
+
+        .text-box.text-box_top {
+          padding-top: 10px !important;
+        }
+
+        .text-box.text-box_bottom {
+          padding-top: 27px !important;
+        }
+
       }
     }
   }

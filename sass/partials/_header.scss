@@ -44,7 +44,7 @@
         align-items: center;
         flex: 1;
         justify-content: flex-end;
-        padding: 0 171px 0 0;
+        padding: 0 170px 0 0;
 
         @include breakpoint (mobile) {
           flex: 1;
@@ -53,10 +53,10 @@
         }
   
         input[type="text"] {
-          width: 8%;
+          width: 10%;
           border: none;
           outline: none;
-          padding: 5px;
+          padding: 5px 0 0 20px;
           font-size: 18px;
           letter-spacing: 1px;
 
