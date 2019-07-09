@@ -58,9 +58,14 @@
   opacity: 0;
 
 
+  @include breakpoint (tablet) {
+    display: none;
+  }
+
   @include breakpoint (mobile) {
     display: none;
   }
+
 }
 
 .icon-slider_arrow {
