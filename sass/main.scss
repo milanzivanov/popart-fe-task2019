@@ -211,10 +211,19 @@
           position: absolute;
           background: $blue1;
           top: 23%;
-          left: -259px;
+          left: -240px;
           transform: translateY(-50%) rotate(-90deg);
           padding: 20px 40px;
           transform-origin: bottom right;
+
+          @include breakpoint (tablet) {
+            display: none;
+          }
+
+          @include breakpoint (mobile) {
+            display: none;
+          }
+
           a {
             color: $white;
             letter-spacing: 1px;
@@ -269,6 +278,7 @@
         }
         a {
           color: $white;
+          cursor: pointer;
         }
 
       }
