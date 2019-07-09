@@ -47,8 +47,20 @@
   height: 3em;
 }
 
+.icon-mision {
+  fill: #005ea3;
+  margin: 0 15px 33px 0;
+  width: 6em;
+  height: 6em;
+}
+
 .icon-mision-none {
   opacity: 0;
+
+
+  @include breakpoint (mobile) {
+    display: none;
+  }
 }
 
 .icon-slider_arrow {

@@ -63,11 +63,13 @@
           @include breakpoint (tablet) {
             width: 60%;
             border-bottom: 2px solid #000;
+            padding: 5px;
           }
 
           @include breakpoint (mobile) {
             width: 50%;
             border-bottom: 2px solid #000;
+            padding: 5px;
           }
         }
   
@@ -110,9 +112,11 @@
 
 }
 
-// menu  
+///////////////
+// menu
+///////////////  
 .nav-burger_menu {
-  width: 15%;
+  width: 25%;
   position: fixed;
   z-index: 25;
   right: 0;
@@ -169,8 +173,20 @@
         display: inline-block;
         padding: 10px 0 30px 0;
         color: #fff;
+        font-size: 18px;
+        font-weight: bold;
       }
     }
+  }
+
+  .nav-menu_btn {
+    display: flex;
+    justify-content: center;
+
+    .blue-btn {
+      border: 1px solid #fff;
+    }
+
   }
 
   .nav-btn {

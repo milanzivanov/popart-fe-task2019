@@ -142,6 +142,9 @@
             color: #303030;
             padding-bottom: 55px;
               
+            @include breakpoint (tablet) {
+              font-size: 45px;
+            }
             @include breakpoint (mobile) {
               font-size: 30px;
             }
@@ -290,6 +293,7 @@
 
 }
 
+//////////////////
 // standard
 .container-standard {
   height: auto;
@@ -364,6 +368,7 @@
 
         @include breakpoint (mobile) {
           padding: 10px;
+          text-align: center;
         }
 
         h2 {
@@ -504,7 +509,7 @@
   }
 }
 
-
+////////////////////////
 // about us
 .container-aboutus {
   .aboutus-content {
@@ -518,11 +523,20 @@
     margin-bottom: 150px;
     padding-left: 30px;
 
+    @include breakpoint (tablet) {
+      max-width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+      background: none;
+      padding: 0 20px;
+    }
+
     @include breakpoint (mobile) {
       max-width: 100%;
       margin: 0 auto;
       flex-direction: column;
       background: none;
+      padding: 0 30px;
     }
 
     .about-us-box {
@@ -537,8 +551,13 @@
     .about-us-box_right {
       padding: 50px 0 50px 0;
 
+      @include breakpoint (tablet) {
+        display: flex;
+        justify-content: center;
+      }
+
       @include breakpoint (mobile) {
-        padding: 0 0 10px 0;
+        display: none;
       }
     }
 
@@ -548,8 +567,8 @@
 
       @include breakpoint (mobile) {
         order: 2;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
       }
 
       h2 {
@@ -573,7 +592,7 @@
         font-weight: 500;
 
         @include breakpoint (mobile) {
-          text-align: center;
+          text-align: start;
           padding: 10px;
         }
       }
@@ -585,12 +604,25 @@
         justify-content: center;
         padding: 0 0 65px 0;
 
+        @include breakpoint (mobile) {
+          flex-flow: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 100%;
+          padding: 0 0 15px 0;
+        }
+
         .text-box {
           flex: 50%;
 
           display: flex;
           align-items: center;
           justify-content: flex-start;
+
+          @include breakpoint (mobile) {
+            flex: 100%;
+            padding: 15px !important;
+          }
 
           a {
             font-weight: bold;
@@ -601,15 +633,29 @@
 
           &:nth-child(odd) {
             padding: 15px 0 0 55px;
+
+            @include breakpoint (mobile) {
+              padding: 0;
+            }
           }
         }
 
         .text-box.text-box_top {
           padding-top: 10px !important;
+
+          @include breakpoint (mobile) {
+            padding: 10px !important;
+          }
+
         }
 
         .text-box.text-box_bottom {
           padding-top: 27px !important;
+
+          @include breakpoint (mobile) {
+            padding: 10px !important;
+          }
+
         }
 
       }
@@ -617,6 +663,7 @@
   }
 }
 
+/////////////////
 // mision
 .container-mision {
 
@@ -628,13 +675,16 @@
   }
   .mision-content {
 
-    max-width: 1626px;
-    margin: 0 30px 0 265px;
-
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     padding: 100px 0;
+    margin: 0 30px 0 262px;
+
+    @include breakpoint (tablet) {
+      margin: 0;
+      padding: 0;
+    }
 
     @include breakpoint (mobile) {
       max-width: 100%;
@@ -646,17 +696,35 @@
     .mision-box {
       flex: 40%;
 
+      @include breakpoint (tablet) {
+        flex: 50%;
+        display: flex;
+        order: 6;
+      }
+
       @include breakpoint (mobile) {
         flex: 100%;
       }
       img {
         max-width: 100%;
-        height: auto;
+        height: 660px;
+
+        @include breakpoint (tablet) {
+          max-width: 100%;
+          height: auto;
+        }
+
       }
     }
 
     .mision-box_right {
       flex: 60%;
+
+      @include breakpoint (tablet) {
+        flex: 50%;
+        display: flex;
+        order: 5;
+      }
 
       @include breakpoint (mobile) {
         flex: 100%;
@@ -667,21 +735,34 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 105px;
+
+        @include breakpoint (tablet) {
+          padding: 0;
+        }
+
+        @include breakpoint (mobile) {
+          padding: 0;
+        }
 
         .right-conten_box {
           flex: 1;
           flex-flow: row wrap;
           display: flex;
           align-items: center;
-          padding: 10px 0 0 35px;
+          padding: 3px 0 0 35px;
 
           .right-conten_box-text {
-            padding: 0 0 0 40px;
+            padding: 0 0 0 25px;
             width: 50%;
+
+            .border-left {
+              margin: 0 0 52px 10px;
+            }
 
             @include breakpoint (mobile) {
               width: 60%;
+              padding: 0;
             }
 
             h2 {
@@ -689,17 +770,22 @@
               color: #c6c6c6;
               font-weight: bold;
               text-transform: uppercase;
+              letter-spacing: 2px;
+              padding: 0 0 38px 0;
             }
             h3 {
               color: $text;
               font-size: 30px;
               font-weight: bold;
-              padding-bottom: 10px;
+              padding-bottom: 25px;
             }
 
             p {
               font-size: 18px;
+              color: #333;
+              padding-bottom: 60px;
             }
+          
           }
         }
       }
@@ -708,6 +794,7 @@
   }
 }
 
+///////////////////
 // act
 .container-act {
   background: url(../img/Aktuelosti.png) no-repeat $white;
