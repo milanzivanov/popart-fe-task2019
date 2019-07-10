@@ -33,6 +33,12 @@
       flex: 3;
       align-self: stretch;
 
+      @include breakpoint (desktop) {
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1;
+      }
+
       @include breakpoint (mobile) {
         justify-content: space-between;
         flex: 100%;
@@ -45,6 +51,11 @@
         flex: 1;
         justify-content: flex-end;
         padding: 0 170px 0 0;
+
+        @include breakpoint (desktop) {
+          justify-content: flex-start;
+          padding: 0;
+        }
 
         @include breakpoint (mobile) {
           flex: 1;
@@ -59,6 +70,12 @@
           padding: 5px 0 0 20px;
           font-size: 18px;
           letter-spacing: 1px;
+
+          @include breakpoint (desktop) {
+            width: 50%;
+            padding: 5px;
+            border-bottom: 2px solid #000;
+          }
 
           @include breakpoint (tablet) {
             width: 60%;
@@ -83,6 +100,10 @@
         flex: 0;
         justify-content: flex-end;
         align-items: center;
+
+        @include breakpoint (desktop) {
+          flex: 1;
+        }
   
         a {
           text-decoration: none;

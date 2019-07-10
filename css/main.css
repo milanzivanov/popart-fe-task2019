@@ -252,6 +252,14 @@ body {
 .icon-search {
   width: 1em;
   height: 1em; }
+  @media only screen and (min-width: 768px) and (max-width: 1365px) {
+    .icon-search {
+      width: 1.5em;
+      height: 1.5em; } }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    .icon-search {
+      width: 1.7em;
+      height: 1.7em; } }
 
 .icon-logo {
   width: 213px;
@@ -348,6 +356,11 @@ body {
       align-items: center;
       flex: 3;
       align-self: stretch; }
+      @media only screen and (min-width: 1366px) and (max-width: 1859px) {
+        .header .header-content nav.nav {
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1; } }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         .header .header-content nav.nav {
           justify-content: space-between;
@@ -359,6 +372,10 @@ body {
         flex: 1;
         justify-content: flex-end;
         padding: 0 170px 0 0; }
+        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
+          .header .header-content nav.nav .nav-search {
+            justify-content: flex-start;
+            padding: 0; } }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
           .header .header-content nav.nav .nav-search {
             flex: 1;
@@ -371,6 +388,11 @@ body {
           padding: 5px 0 0 20px;
           font-size: 18px;
           letter-spacing: 1px; }
+          @media only screen and (min-width: 1366px) and (max-width: 1859px) {
+            .header .header-content nav.nav .nav-search input[type="text"] {
+              width: 50%;
+              padding: 5px;
+              border-bottom: 2px solid #000; } }
           @media only screen and (min-width: 768px) and (max-width: 1365px) {
             .header .header-content nav.nav .nav-search input[type="text"] {
               width: 60%;
@@ -388,6 +410,9 @@ body {
         flex: 0;
         justify-content: flex-end;
         align-items: center; }
+        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
+          .header .header-content nav.nav .nav-burger {
+            flex: 1; } }
         .header .header-content nav.nav .nav-burger a {
           text-decoration: none;
           font-size: 18px;
@@ -488,8 +513,7 @@ body {
     height: calc(100vh - 216px);
     position: relative;
     background: url(../img/MOBES.png) no-repeat #fff;
-    background-position: left 30px bottom 0;
-    overflow: hidden; }
+    background-position: left 30px bottom 0; }
     @media only screen and (min-width: 768px) and (max-width: 1365px) {
       .container-mobes .hero-container {
         background: none;
@@ -532,8 +556,7 @@ body {
         background-size: cover; }
         @media only screen and (min-width: 768px) and (max-width: 1365px) {
           .container-mobes .hero-container .hero-content .bg-right {
-            flex: 0 0 100%;
-            height: 100vh; } }
+            flex: 0 0 100%; } }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
           .container-mobes .hero-container .hero-content .bg-right {
             flex: 0 0 100%;
@@ -648,7 +671,7 @@ body {
         @media only screen and (min-width: 120px) and (max-width: 767px) {
           .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
             display: none; } }
-        @media only screen and (min-width: 1366px) {
+        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
           .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
             display: block; } }
       .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
@@ -671,7 +694,7 @@ body {
         position: absolute;
         top: 0;
         right: 0; }
-        @media only screen and (min-width: 1366px) {
+        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
           .container-mobes .hero-container .hero-content .mobile-view-hide {
             display: none; } }
         .container-mobes .hero-container .hero-content .mobile-view-hide a {

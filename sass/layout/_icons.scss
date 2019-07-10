@@ -21,6 +21,16 @@
 .icon-search {
   width: 1em;
   height: 1em;
+
+  @include breakpoint (tablet) {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  @include breakpoint (mobile) {
+    width: 1.7em;
+    height: 1.7em;
+  }
 }
   
 .icon-logo {
