@@ -308,6 +308,12 @@ body {
   background-color: #333;
   color: #fff;
   padding: 20px 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1365px) {
+    .footer .footer-content {
+      padding: 25px 0; } }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    .footer .footer-content {
+      padding: 50px 0; } }
   .footer .footer-content p {
     text-align: center;
     font-size: 16px; }
@@ -1467,24 +1473,41 @@ section.container-contact .contact-content {
   flex-flow: row wrap;
   justify-content: center;
   padding: 70px 0 35px 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1365px) {
+    section.container-contact .contact-content {
+      justify-content: flex-start;
+      padding: 25px; } }
   @media only screen and (min-width: 120px) and (max-width: 767px) {
     section.container-contact .contact-content {
       justify-content: flex-start;
-      padding: 50px 0 0 50px; } }
+      padding: 25px; } }
   section.container-contact .contact-content .content-box {
     flex: 0 0 calc(25% - 20px);
     margin: 5px;
     display: flex;
     flex-flow: row wrap; }
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
+      section.container-contact .contact-content .content-box {
+        flex: 0 0 calc(33.333% - 20px);
+        background-color: #fff;
+        padding: 5px; } }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       section.container-contact .contact-content .content-box {
         flex: 0 0 calc(50% - 20px);
-        flex-flow: initial; } }
+        flex-flow: initial;
+        background-color: #fff;
+        padding: 5px; } }
     section.container-contact .contact-content .content-box .content-box_map {
       flex: 0 0 calc(50% - 20px);
       margin: 5px; }
       section.container-contact .contact-content .content-box .content-box_map:last-child {
         padding: 50px 0 0 0; }
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
+          section.container-contact .contact-content .content-box .content-box_map:last-child {
+            padding: 0; } }
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+          section.container-contact .contact-content .content-box .content-box_map:last-child {
+            padding: 0; } }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         section.container-contact .contact-content .content-box .content-box_map {
           flex: 100%; } }
@@ -1520,10 +1543,17 @@ section.container-contact .contact-content {
     flex: 2;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
+      section.container-contact .contact-content .content-box_plus {
+        flex: 33.333%;
+        background-color: #fff;
+        padding: 5px; } }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       section.container-contact .contact-content .content-box_plus {
         align-items: center;
-        width: 100%; } }
+        width: 100%;
+        background-color: #fff;
+        padding: 5px; } }
     section.container-contact .contact-content .content-box_plus .box-plus_position {
       display: flex;
       justify-content: center;

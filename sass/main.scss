@@ -1410,9 +1410,14 @@ section.container-contact {
     justify-content: center;
     padding: 70px 0 35px 0;
 
+    @include breakpoint (tablet) {
+      justify-content: flex-start;
+      padding: 25px;
+    }
+
     @include breakpoint (mobile) {
       justify-content: flex-start;
-      padding: 50px 0 0 50px;
+      padding: 25px;
     }
 
     .content-box {
@@ -1422,9 +1427,17 @@ section.container-contact {
       display: flex;
       flex-flow: row wrap;
       
+      @include breakpoint (tablet) {
+        flex: 0 0 calc(33.333% - 20px);
+        background-color: #fff;
+        padding: 5px;
+      }
+
       @include breakpoint (mobile) {
         flex: 0 0 calc(50% - 20px);
         flex-flow: initial;
+        background-color: #fff;
+        padding: 5px;
       }
 
       .content-box_map {
@@ -1433,6 +1446,14 @@ section.container-contact {
 
         &:last-child {
           padding: 50px 0 0 0;
+
+          @include breakpoint (tablet) {
+            padding: 0;
+          }
+
+          @include breakpoint (mobile) {
+            padding: 0;
+          }
         }
       
       @include breakpoint (mobile) {
@@ -1480,7 +1501,7 @@ section.container-contact {
             align-items: center;
             a {
               font-size: 16px;
-              color: #005ea3;
+              color: $blue1;
               text-decoration: underline;
             }
           } 
@@ -1494,9 +1515,17 @@ section.container-contact {
       flex-direction: column;
       align-items: center;
 
+      @include breakpoint (tablet) {
+        flex: 33.333%;
+        background-color: #fff;
+        padding: 5px;
+      }
+
       @include breakpoint (mobile) {
         align-items: center;
         width: 100%;
+        background-color: #fff;
+        padding: 5px;
       }
 
       .box-plus_position {
