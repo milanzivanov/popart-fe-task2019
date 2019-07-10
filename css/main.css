@@ -1237,6 +1237,9 @@ body {
 .container-act {
   background: url(../img/Aktuelosti.png) no-repeat #fff;
   background-position: left -20px top 205px; }
+  @media only screen and (min-width: 768px) and (max-width: 1365px) {
+    .container-act {
+      background: none; } }
   @media only screen and (min-width: 120px) and (max-width: 767px) {
     .container-act {
       background: none; } }
@@ -1247,25 +1250,41 @@ body {
     justify-content: space-between;
     flex-flow: row wrap;
     padding: 50px 0 0 7px; }
+    @media only screen and (min-width: 768px) and (max-width: 1365px) {
+      .container-act .act-content {
+        padding: 10px 5px 0 5px; } }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       .container-act .act-content {
         flex-flow: column;
         max-width: 100%;
         margin: auto;
-        padding: 10px 0 0 0; } }
+        padding: 10px 5px 0 5px; } }
     .container-act .act-content .act-content_top {
       display: flex;
       justify-content: space-between;
       width: 100%;
       align-items: flex-end;
       padding-bottom: 33px; }
+      @media only screen and (min-width: 768px) and (max-width: 1365px) {
+        .container-act .act-content .act-content_top {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; } }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         .container-act .act-content .act-content_top {
           flex-direction: column;
           justify-content: center;
-          align-items: center; } }
+          align-items: flex-start; } }
       .container-act .act-content .act-content_top .act-text {
         color: #005ea3; }
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
+          .container-act .act-content .act-content_top .act-text {
+            align-items: flex-start;
+            padding: 35px; } }
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+          .container-act .act-content .act-content_top .act-text {
+            align-items: flex-start;
+            padding: 35px; } }
         .container-act .act-content .act-content_top .act-text h2 {
           font-size: 30px;
           font-weight: bold;
@@ -1300,6 +1319,9 @@ body {
   max-width: 1393px;
   margin: auto;
   padding: 0 0 0 7px; }
+  @media only screen and (min-width: 768px) and (max-width: 1365px) {
+    #secondary-slider {
+      padding: 0 5px 0 7px; } }
   @media only screen and (min-width: 120px) and (max-width: 767px) {
     #secondary-slider {
       max-width: 100%;
@@ -1350,9 +1372,25 @@ body {
       padding: 33px 0 20px 0;
       background: #fafafa;
       text-align: center; }
+      @media only screen and (min-width: 768px) and (max-width: 1365px) {
+        #secondary-slider .slides li .act-capture-text {
+          padding: 20px;
+          font-size: 11px;
+          text-align: start; } }
+      @media only screen and (min-width: 120px) and (max-width: 767px) {
+        #secondary-slider .slides li .act-capture-text {
+          font-size: 11px;
+          padding: 20px;
+          text-align: start; } }
       #secondary-slider .slides li .act-capture-text p {
         font-size: 18px;
         color: #303030; }
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
+          #secondary-slider .slides li .act-capture-text p {
+            font-size: 16px; } }
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+          #secondary-slider .slides li .act-capture-text p {
+            font-size: 13px; } }
     #secondary-slider .slides li .act-hover-box {
       position: absolute;
       background: #005ea3;

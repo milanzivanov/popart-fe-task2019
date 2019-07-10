@@ -1090,6 +1090,9 @@
   background: url(../img/Aktuelosti.png) no-repeat $white;
   background-position: left -20px top 205px;
 
+  @include breakpoint (tablet) {
+    background: none;
+  }
   @include breakpoint (mobile) {
     background: none;
   }
@@ -1104,11 +1107,15 @@
 
     padding: 50px 0 0 7px;
 
+    @include breakpoint (tablet) {
+      padding: 10px 5px 0 5px;
+    }
+
     @include breakpoint (mobile) {
       flex-flow: column;
       max-width: 100%;
       margin: auto;
-      padding: 10px 0 0 0;
+      padding: 10px 5px 0 5px;
     }
 
     .act-content_top {
@@ -1118,14 +1125,30 @@
       align-items: flex-end;
       padding-bottom: 33px;
 
+      @include breakpoint (tablet) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
       @include breakpoint (mobile) {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
       }
 
       .act-text {
         color: #005ea3;
+
+        @include breakpoint (tablet) {
+          align-items: flex-start;
+          padding: 35px;
+        }
+
+        @include breakpoint (mobile) {
+          align-items: flex-start;
+          padding: 35px;
+        }
 
         h2 {
           font-size: 30px;
@@ -1180,6 +1203,10 @@
   max-width: 1393px;
   margin: auto;
   padding: 0 0 0 7px;
+
+  @include breakpoint (tablet) {
+    padding: 0 5px 0 7px;
+  }
 
   @include breakpoint (mobile) {
     max-width: 100%;
@@ -1243,9 +1270,30 @@
         padding: 33px 0 20px 0;
         background: #fafafa;
         text-align: center;
+
+        @include breakpoint (tablet) {
+          padding: 20px;
+          font-size: 11px;
+          text-align: start;
+        }
+
+        @include breakpoint (mobile) {
+          font-size: 11px;
+          padding: 20px;
+          text-align: start;
+        }
+
         p {
           font-size: 18px;
           color: #303030;
+
+          @include breakpoint (tablet) {
+            font-size: 16px;
+          }
+  
+          @include breakpoint (mobile) {
+            font-size: 13px;
+          }
         }
       }
 
