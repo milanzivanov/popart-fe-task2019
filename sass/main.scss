@@ -452,6 +452,11 @@
                 line-height: 1.5;
                 font-weight: 700;
                 text-transform: uppercase;
+
+                @include breakpoint (mobile) {
+                  padding: 10px;
+                  font-size: 13px;
+                }
               }
             }
 
@@ -804,10 +809,12 @@
 
   @include breakpoint (tablet) {
     background: none;
+    padding-bottom: 50px;
   }
 
   @include breakpoint (mobile) {
     background: none;
+    padding-bottom: 50px;
   }
 
   .client-content {
@@ -892,6 +899,10 @@
   background: url(../img/Tim.png) no-repeat, linear-gradient(to left, $white 60%, #005ea3 40%);
   background-position: right 0 bottom;
  
+  @include breakpoint (tablet) {
+    background: none;
+  }
+
   @include breakpoint (mobile) {
     background: none;
   }
@@ -905,8 +916,14 @@
     max-width: 1393px;
     margin: auto;
 
+    @include breakpoint (tablet) {
+      flex-direction: column;
+      max-width: 100%;
+    }
+
     @include breakpoint (mobile) {
       flex-direction: column;
+      max-width: 100%;
     }
 
     .tim-content_left {
@@ -915,9 +932,14 @@
       padding: 100px 25px 75px 45px;
       position: relative;
 
+      @include breakpoint (tablet) {
+        flex: 100%;
+        padding: 100px 25px 75px 25px;
+      }
+
       @include breakpoint (mobile) {
         flex: 100%;
-        padding: 100px 0 100px 0;
+        padding: 100px 0 25px 0;
       }
 
       // flexslider 3
@@ -949,6 +971,11 @@
               justify-content: center;
               align-items: center;
 
+              @include breakpoint (mobile) {
+                justify-content: flex-start;
+                align-items: flex-start;
+              }
+
               h2 {
                 color: #303030;
                 font-size: 25px;
@@ -977,6 +1004,10 @@
         height: 100%;
         z-index: 5;
 
+        @include breakpoint (tablet) {
+          display: none;
+        }
+
         @include breakpoint (mobile) {
           display: none;
         }
@@ -996,8 +1027,17 @@
       justify-content: center;
       border-left: 1px solid #fff;
 
+      @include breakpoint (tablet) {
+        right: 0;
+        right: 20px;
+        border-left: none;
+      }
+      
       @include breakpoint (mobile) {
         right: 0;
+        border-left: none;
+        width: 100%;
+        display: flex;
       }
     }
 
@@ -1007,9 +1047,17 @@
       justify-content: center;
       padding: 80px 0 0 45px;
 
+
+      @include breakpoint (tablet) {
+        flex: 100%;
+        padding: 25px 35px;
+        justify-content: flex-start;
+      }
+
       @include breakpoint (mobile) {
         flex: 100%;
-        padding-top: 10px;
+        justify-content: flex-start;
+        padding: 35px;
       }
 
       .act-text {
