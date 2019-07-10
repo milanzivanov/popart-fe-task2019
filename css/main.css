@@ -492,7 +492,8 @@ body {
     overflow: hidden; }
     @media only screen and (min-width: 768px) and (max-width: 1365px) {
       .container-mobes .hero-container {
-        background: none; } }
+        background: none;
+        height: calc(100vh - 105px); } }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       .container-mobes .hero-container {
         background: none; } }
@@ -1098,7 +1099,7 @@ body {
       padding: 67px 0 0 0; }
       @media only screen and (min-width: 768px) and (max-width: 1365px) {
         .container-client .client-content .client-content_right {
-          padding: 0 20px; } }
+          padding: 0; } }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         .container-client .client-content .client-content_right {
           flex: 100%;

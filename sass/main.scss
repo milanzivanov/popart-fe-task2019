@@ -39,6 +39,7 @@
 
     @include breakpoint (tablet) {
       background: none;
+      height: calc(100vh - 105px);
     }
 
     @include breakpoint (mobile) {
@@ -879,7 +880,7 @@
       padding: 67px 0 0 0;
 
       @include breakpoint (tablet) {
-        padding: 0 20px;
+        padding: 0;
       }
 
       @include breakpoint (mobile) {
