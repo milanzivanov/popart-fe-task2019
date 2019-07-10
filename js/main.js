@@ -31,8 +31,8 @@ $(window).load(function() {
         animation: 'slide',
         customDirectionNav: $(".flex-container2 a"),
         animationLoop: false,
-        itemWidth: 350,
-        itemMargin: 37,
+        itemWidth: 210,
+        itemMargin: 15,
         minItems: 3,
         maxItems: 3
     });

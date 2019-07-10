@@ -1095,14 +1095,14 @@
   }
 
   .act-content {
-    max-width: 1626px;
-    margin: 0 30px 0 265px;
+    max-width: 1393px;
+    margin: auto;
 
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
 
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 7px;
 
     @include breakpoint (mobile) {
       flex-flow: column;
@@ -1146,12 +1146,16 @@
           }
 
         }
+
+        .blue-btn {
+          padding: 25px 75px;
+          letter-spacing: 0;
+        }
       }
 
       .svg-slider-btn {
         align-self: flex-end;
         background-color: $blue1;
-        padding: 25px 0;
 
         @include breakpoint (mobile) {
           order: 5;
@@ -1173,8 +1177,9 @@
 
 #secondary-slider {
 
-  max-width: 1626px;
-  margin: 0 30px 0 265px;
+  max-width: 1393px;
+  margin: auto;
+  padding: 0 0 0 7px;
 
   @include breakpoint (mobile) {
     max-width: 100%;
@@ -1195,10 +1200,9 @@
 
       img {
         height: 50vh;
-        max-height: 350px; /*maximum height for all slides*/
-        width: auto; /*proper aspect ratio of images*/
+        max-height: 235px; /*maximum height for all slides*/
+        width: 100%; /*proper aspect ratio of images*/
         max-width: 100%; /*maximum width for all slides*/
-        margin: 0 auto; /*centering images in the container*/
 
         @include breakpoint (mobile) {
           height: 25vh;
@@ -1236,7 +1240,7 @@
       }
 
       .act-capture-text {
-        padding: 25px;
+        padding: 33px 0 20px 0;
         background: #fafafa;
         text-align: center;
         p {
@@ -1285,7 +1289,7 @@
 
 
 
-
+//////////////////////
 // ponuda
 .container-offer {
   .offer-content {

@@ -1241,12 +1241,12 @@ body {
     .container-act {
       background: none; } }
   .container-act .act-content {
-    max-width: 1626px;
-    margin: 0 30px 0 265px;
+    max-width: 1393px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    padding: 100px 0 0 0; }
+    padding: 50px 0 0 7px; }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       .container-act .act-content {
         flex-flow: column;
@@ -1280,10 +1280,12 @@ body {
           @media only screen and (min-width: 120px) and (max-width: 767px) {
             .container-act .act-content .act-content_top .act-text p {
               text-align: center; } }
+        .container-act .act-content .act-content_top .act-text .blue-btn {
+          padding: 25px 75px;
+          letter-spacing: 0; }
       .container-act .act-content .act-content_top .svg-slider-btn {
         align-self: flex-end;
-        background-color: #005ea3;
-        padding: 25px 0; }
+        background-color: #005ea3; }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
           .container-act .act-content .act-content_top .svg-slider-btn {
             order: 5;
@@ -1295,8 +1297,9 @@ body {
             width: 100%; } }
 
 #secondary-slider {
-  max-width: 1626px;
-  margin: 0 30px 0 265px; }
+  max-width: 1393px;
+  margin: auto;
+  padding: 0 0 0 7px; }
   @media only screen and (min-width: 120px) and (max-width: 767px) {
     #secondary-slider {
       max-width: 100%;
@@ -1312,14 +1315,12 @@ body {
         margin: 0 0 20px 0; } }
     #secondary-slider .slides li img {
       height: 50vh;
-      max-height: 350px;
+      max-height: 235px;
       /*maximum height for all slides*/
-      width: auto;
+      width: 100%;
       /*proper aspect ratio of images*/
       max-width: 100%;
-      /*maximum width for all slides*/
-      margin: 0 auto;
-      /*centering images in the container*/ }
+      /*maximum width for all slides*/ }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         #secondary-slider .slides li img {
           height: 25vh;
@@ -1346,7 +1347,7 @@ body {
           #secondary-slider .slides li .act-date-box p {
             font-size: 20px; } }
     #secondary-slider .slides li .act-capture-text {
-      padding: 25px;
+      padding: 33px 0 20px 0;
       background: #fafafa;
       text-align: center; }
       #secondary-slider .slides li .act-capture-text p {
