@@ -1,5 +1,3 @@
-console.log("this one");
-
 $(document).ready(function() {
   'use strict';
   var menuBotton = $(".js-burger-icon, .js-close-menu");
@@ -44,7 +42,7 @@ $(window).load(function() {
         customDirectionNav: $(".flex-container3 a"),
         animationLoop: false,
         itemWidth: 210,
-        itemMargin: 0,
+        itemMargin: 15,
         minItems: 3,
         maxItems: 3
     });
