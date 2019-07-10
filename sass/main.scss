@@ -800,6 +800,7 @@
 .container-client {
   background: url(../img/Klijenti.png) no-repeat #fff;
   background-position: left -20px top 205px;
+  padding-bottom: 260px;
 
   @include breakpoint (tablet) {
     background: none;
@@ -888,7 +889,8 @@
 .container-tim {
 
   background: url(../img/Tim.png) no-repeat $white;
-  background-position: right 30px bottom;
+  background: url(../img/Tim.png) no-repeat, linear-gradient(to left, $white 60%, #005ea3 40%);
+  background-position: right 0 bottom;
  
   @include breakpoint (mobile) {
     background: none;
@@ -900,14 +902,17 @@
     justify-content: space-between;
     flex-flow: row wrap;
 
+    max-width: 1393px;
+    margin: auto;
+
     @include breakpoint (mobile) {
       flex-direction: column;
     }
 
     .tim-content_left {
-      flex: 65%;
+      flex: 80%;
       background-color: $blue1;
-      padding: 100px 0 100px 200px;
+      padding: 100px 25px 75px 45px;
       position: relative;
 
       @include breakpoint (mobile) {
@@ -928,7 +933,7 @@
             img {
               margin: 0 auto;
               max-width: 100%;
-              height: 25vh;
+              height: 30vh;
               overflow: hidden;
 
               @include breakpoint (mobile) {
@@ -968,7 +973,7 @@
         right: 0;
         bottom: 0;
         background-color: $white;
-        width: 150px;
+        width: 175px;
         height: 100%;
         z-index: 5;
 
@@ -981,14 +986,15 @@
     .flex-container3 {
       position: absolute;
       top: 0;
-      right: 50px;
+      right: 75px;
       z-index: 15;
-      background-color: $blue1;
-      width: 150px;
+      background-color: #005ea3;
+      width: 100px;
       height: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-left: 1px solid #fff;
 
       @include breakpoint (mobile) {
         right: 0;
@@ -996,16 +1002,33 @@
     }
 
     .tim-content_right {
-      flex: 30%;
-
+      flex: 20%;
       display: flex;
       justify-content: center;
-
-      padding-top: 70px;
+      padding: 80px 0 0 45px;
 
       @include breakpoint (mobile) {
         flex: 100%;
         padding-top: 10px;
+      }
+
+      .act-text {
+        .border-left {
+          margin: 0 0 25px 0;
+        }
+        
+        h2 {
+          padding: 0 0 13px 0;
+          letter-spacing: 1px;
+        }
+
+        p {
+          padding: 0 0 22px 0;
+        }
+
+        .blue-btn {
+          padding: 25px 49px
+        }
       }
     }
   }

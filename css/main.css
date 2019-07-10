@@ -1035,7 +1035,8 @@ body {
 
 .container-client {
   background: url(../img/Klijenti.png) no-repeat #fff;
-  background-position: left -20px top 205px; }
+  background-position: left -20px top 205px;
+  padding-bottom: 260px; }
   @media only screen and (min-width: 768px) and (max-width: 1365px) {
     .container-client {
       background: none; } }
@@ -1093,21 +1094,24 @@ body {
 
 .container-tim {
   background: url(../img/Tim.png) no-repeat #fff;
-  background-position: right 30px bottom; }
+  background: url(../img/Tim.png) no-repeat, linear-gradient(to left, #fff 60%, #005ea3 40%);
+  background-position: right 0 bottom; }
   @media only screen and (min-width: 120px) and (max-width: 767px) {
     .container-tim {
       background: none; } }
   .container-tim .tim-content {
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    max-width: 1393px;
+    margin: auto; }
     @media only screen and (min-width: 120px) and (max-width: 767px) {
       .container-tim .tim-content {
         flex-direction: column; } }
     .container-tim .tim-content .tim-content_left {
-      flex: 65%;
+      flex: 80%;
       background-color: #005ea3;
-      padding: 100px 0 100px 200px;
+      padding: 100px 25px 75px 45px;
       position: relative; }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         .container-tim .tim-content .tim-content_left {
@@ -1123,7 +1127,7 @@ body {
           .container-tim .tim-content .tim-content_left #third-slider .slides li img {
             margin: 0 auto;
             max-width: 100%;
-            height: 25vh;
+            height: 30vh;
             overflow: hidden; }
             @media only screen and (min-width: 120px) and (max-width: 767px) {
               .container-tim .tim-content .tim-content_left #third-slider .slides li img {
@@ -1151,7 +1155,7 @@ body {
         right: 0;
         bottom: 0;
         background-color: #fff;
-        width: 150px;
+        width: 175px;
         height: 100%;
         z-index: 5; }
         @media only screen and (min-width: 120px) and (max-width: 767px) {
@@ -1160,26 +1164,36 @@ body {
     .container-tim .tim-content .flex-container3 {
       position: absolute;
       top: 0;
-      right: 50px;
+      right: 75px;
       z-index: 15;
       background-color: #005ea3;
-      width: 150px;
+      width: 100px;
       height: 100px;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      border-left: 1px solid #fff; }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         .container-tim .tim-content .flex-container3 {
           right: 0; } }
     .container-tim .tim-content .tim-content_right {
-      flex: 30%;
+      flex: 20%;
       display: flex;
       justify-content: center;
-      padding-top: 70px; }
+      padding: 80px 0 0 45px; }
       @media only screen and (min-width: 120px) and (max-width: 767px) {
         .container-tim .tim-content .tim-content_right {
           flex: 100%;
           padding-top: 10px; } }
+      .container-tim .tim-content .tim-content_right .act-text .border-left {
+        margin: 0 0 25px 0; }
+      .container-tim .tim-content .tim-content_right .act-text h2 {
+        padding: 0 0 13px 0;
+        letter-spacing: 1px; }
+      .container-tim .tim-content .tim-content_right .act-text p {
+        padding: 0 0 22px 0; }
+      .container-tim .tim-content .tim-content_right .act-text .blue-btn {
+        padding: 25px 49px; }
 
 .container-act {
   background: url(../img/Aktuelosti.png) no-repeat #fff;
