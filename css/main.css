@@ -390,7 +390,7 @@ body {
           letter-spacing: 1px; }
           @media only screen and (min-width: 1366px) and (max-width: 1859px) {
             .header .header-content nav.nav .nav-search input[type="text"] {
-              width: 50%;
+              width: 80%;
               padding: 5px;
               border-bottom: 2px solid #000; } }
           @media only screen and (min-width: 768px) and (max-width: 1365px) {
@@ -526,8 +526,12 @@ body {
       justify-content: flex-start;
       align-items: center;
       position: relative;
-      height: 721px;
-      margin-bottom: 100px; }
+      height: 100%;
+      margin-bottom: 100px;
+      overflow: hidden; }
+      @media only screen and (min-width: 1366px) and (max-width: 1859px) {
+        .container-mobes .hero-container .hero-content {
+          height: 100%; } }
       @media only screen and (min-width: 768px) and (max-width: 1365px) {
         .container-mobes .hero-container .hero-content {
           max-width: 100%;
@@ -566,6 +570,10 @@ body {
         display: flex;
         top: 159px;
         left: 0; }
+        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
+          .container-mobes .hero-container .hero-content .hero-text {
+            top: 50%;
+            transform: translateY(-50%); } }
         @media only screen and (min-width: 768px) and (max-width: 1365px) {
           .container-mobes .hero-container .hero-content .hero-text {
             width: 100%;
@@ -604,102 +612,8 @@ body {
             @media only screen and (min-width: 120px) and (max-width: 767px) {
               .container-mobes .hero-container .hero-content .hero-text .hero-text_content h1 {
                 font-size: 30px; } }
-      .container-mobes .hero-container .hero-content .hero-container_sigestion {
-        position: absolute;
-        width: 50%;
-        background: #005ea3;
-        padding: 20px;
-        bottom: 0;
-        right: -945px;
-        color: #fff;
-        display: flex;
-        cursor: pointer;
-        display: flex;
-        cursor: pointer;
-        flex-flow: row wrap;
-        transition: all 0.3s ease-in-out; }
-        @media only screen and (min-width: 120px) and (max-width: 767px) {
-          .container-mobes .hero-container .hero-content .hero-container_sigestion {
-            overflow-x: auto;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            top: 0;
-            color: #fff;
-            right: 0;
-            transform: translate(-100%, 0); } }
-        .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-input-box {
-          flex: 50%;
-          padding: 10px 0; }
-          .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-input-box p {
-            padding-bottom: 10px; }
-          .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-input-box input.input-sugest {
-            width: 95%;
-            padding: 30px;
-            border: none;
-            outline: none; }
-        .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-input-box_coments {
-          flex: 100%; }
-          .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-input-box_coments textarea {
-            width: 97%;
-            border: none;
-            outline: none; }
-        .container-mobes .hero-container .hero-content .hero-container_sigestion .sugest-left-btn {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          width: 100%; }
-        .container-mobes .hero-container .hero-content .hero-container_sigestion .hero-container_sugest {
-          position: absolute;
-          background: #005ea3;
-          top: 23%;
-          left: -240px;
-          transform: translateY(-50%) rotate(-90deg);
-          padding: 20px 40px;
-          transform-origin: bottom right; }
-          @media only screen and (min-width: 768px) and (max-width: 1365px) {
-            .container-mobes .hero-container .hero-content .hero-container_sigestion .hero-container_sugest {
-              display: none; } }
-          @media only screen and (min-width: 120px) and (max-width: 767px) {
-            .container-mobes .hero-container .hero-content .hero-container_sigestion .hero-container_sugest {
-              display: none; } }
-          .container-mobes .hero-container .hero-content .hero-container_sigestion .hero-container_sugest a {
-            color: #fff;
-            letter-spacing: 1px;
-            font-size: 18px;
-            font-weight: bold; }
-        @media only screen and (min-width: 120px) and (max-width: 767px) {
-          .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
-            display: none; } }
-        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
-          .container-mobes .hero-container .hero-content .hero-container_sigestion .mobile-view-hide {
-            display: block; } }
-      .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
-        right: 0;
-        z-index: 50; }
-        @media only screen and (min-width: 768px) and (max-width: 1365px) {
-          .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
-            transform: translate(0%, 0%);
-            height: 450px;
-            overflow-y: scroll; } }
-        @media only screen and (min-width: 120px) and (max-width: 767px) {
-          .container-mobes .hero-container .hero-content .hero-container_sigestion.active {
-            transform: translate(0%, 0%); } }
-      .container-mobes .hero-container .hero-content .mobile-view-hide {
-        display: flex;
-        padding: 10px;
-        background: #005ea3;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        right: 0; }
-        @media only screen and (min-width: 1366px) and (max-width: 1859px) {
-          .container-mobes .hero-container .hero-content .mobile-view-hide {
-            display: none; } }
-        .container-mobes .hero-container .hero-content .mobile-view-hide a {
-          color: #fff;
-          cursor: pointer; }
+          .container-mobes .hero-container .hero-content .hero-text .hero-text_content .blue-btn {
+            padding: 25px 45px; }
 
 .container-standard {
   height: auto;

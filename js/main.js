@@ -7,10 +7,10 @@ $(document).ready(function() {
     $(".nav-burger_menu").toggleClass("active");
   });
   sugestionBtn.on("click", function(e) {
-    $(".hero-container_sigestion").addClass("active");
+    $(".hero-container_sugestion").addClass("active");
   });
   sugestionBtnClose.on("click", function(e) {
-    $(".hero-container_sigestion").removeClass("active");
+    $(".hero-container_sugestion").removeClass("active");
   });
 });
 
