@@ -153,9 +153,25 @@ a.blue-btn.blue-btn_obout {
 button {
   background: none;
   font: inherit;
+  border: 2px solid;
   line-height: 1;
   outline: none;
   border: none; }
+
+.slide:hover, .slide:focus {
+  box-shadow: inset 20.5em 0 0 0 var(--hover); }
+
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff; }
+
+.slide {
+  --color: #fff;
+  --hover: #00BCD4; }
+
+button {
+  color: var(--color);
+  transition: 0.25s; }
 
 /* ----------------- IE
 ----------------------------------------------------------------------- */
