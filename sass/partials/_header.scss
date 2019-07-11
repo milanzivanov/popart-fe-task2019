@@ -45,7 +45,7 @@
         padding: 5px;
       }
   
-      .nav-search {
+      form.nav-search {
         display: flex;
         align-items: center;
         flex: 1;
@@ -91,7 +91,10 @@
         }
   
         .nav-search_icon {
-          padding: 5px
+          padding: 5px;
+          border: none;
+          outline: none;
+          background: none;
         }
       }
   
@@ -117,12 +120,14 @@
           padding: 10px 15px 10px 33px;
           
           a {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             transition: 0.3s ease-in-out;
             padding: 10px;
 
             &:hover {
-              background-color: rgba(0, 255, 127, 0.8);
+              background-color: rgba(0, 94, 163, 0.4);
               border-radius: 50%;
             }
           }
@@ -143,15 +148,26 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #005ea3;
+  background-color: $blue1;
   opacity: 0.9;
   padding: 10px;
   display: none;
   flex-direction: column;
   transition: 0.3s all ease-in-out;
 
+  @include breakpoint (desktop) {
+    width: 40%;
+    overflow-y: auto;
+  }
+
+  @include breakpoint (tablet) {
+    width: 50%;
+    overflow-y: auto;
+  }
+
   @include breakpoint (mobile) {
     width: 100%;
+    overflow-y: auto;
   }
 
   .nav-menu_close {
@@ -167,9 +183,11 @@
     }
 
     a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 10px;
-      background-color: #005ea3;
+      background-color: $blue1;
       transition: 0.3s ease-in-out;
       img {
         max-width: 100%;
@@ -178,7 +196,7 @@
     }
     a:hover {
       border-radius: 50%;
-      background-color: indianred;
+      background-color: rgba(255, 87, 34, 0.79);
 
     }
   }

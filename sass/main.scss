@@ -27,9 +27,18 @@
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
 
+/////////////
 // mobes
 .container-mobes {
   height: 100vh;
+
+  @include breakpoint (tablet) {
+    height: auto;
+  }
+
+  @include breakpoint (mobile) {
+    height: auto;
+  }
   
   .hero-container {
     height: calc(100vh - 216px);
@@ -44,6 +53,7 @@
 
     @include breakpoint (mobile) {
       background: none;
+      height: calc(100vh - 200px);
     }
   
     .hero-content {
@@ -776,6 +786,10 @@
           max-width: 100%;
           height: 50vh;
         }
+        @include breakpoint (mobile) {
+          max-width: 100%;
+          height: auto;
+        }
 
       }
     }
@@ -1139,8 +1153,6 @@
   }
 }
 
-
-
 ///////////////////
 // act
 .container-act {
@@ -1391,7 +1403,6 @@
     }
   }
 }
-
 
 
 //////////////////////
