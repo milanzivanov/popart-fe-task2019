@@ -59,6 +59,7 @@
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: bold;
+    cursor: pointer;
 
     @include breakpoint (mobile) {
       display: block;
@@ -72,7 +73,7 @@ a.blue-btn.blue-btn_obout {
 
 .blue-btn_wborder {
   border: 1px solid #fff;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .svg-slider-btn {
